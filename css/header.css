@@ -23,7 +23,7 @@
 }
 
 .navbar__link:hover {
-    color: var(--main-color);
+    color: var(--primary-color);
 }
 
 @media screen and (max-width: 768px) {

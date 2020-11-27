@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventure Awaits</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -24,14 +27,90 @@
         <div class="navbar__menu">
             <a href="/" class="navbar__link">Home</a>
             <a href="includes/oregon.html" class="navbar__link">Oregon</a>
-            <a href="/" class="navbar__link">Mountains</a>
-            <a href="/" class="navbar__link">Coastal</a>
-
+            <a href="/" class="navbar__link">Gallery</a>
+            <a href="/" class="navbar__link">Blog</a>
+            <a href="/" class="navbar__link navbar__btn">Contact Me</a> 
+            <!-- need to do more implementation later -->
         </div>
     </nav>
 
     <!-- Hero Section -->
-    
+    <div class="hero">
+        <div class="hero__content">
+            <h1>Adventure Awaits</h1>
+            <p>Explore the Outdoors</p>
+            <a href="/" class="button">Oregon</a>
+        </div>
+    </div>
+
+    <!-- Oregon Outdoor Summary Section -->
+    <div class="summary">
+        <div class="summary__container">
+            <div>
+                <p class="topline">Oregon</p>
+                <h1 class="summary__headline">Outdoor, Food and No Taxes!</h1>
+                <div class="summary__features">
+                    <p class="summary__feature">
+                        <i class="fas fa-campground"></i>The 7 Wonders of Oregon
+                    </p>
+                    <p class="summary__feature">
+                        <i class="fas fa-mountain"></i>Oregon Mountains
+                    </p>
+                    <p class="summary__feature">
+                        <i class="fas fa-water"></i>Oregon Coast
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./images/coffee-wilderness.jpg" alt="Coffee in the Wilderness" class="summary__img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Outdoor Hiking Sections -->
+    <div class="hiking">
+        <h1>Go Hiking Today!</h1>
+        <p class="hiking__desc">The outdoors can't wait!</p>
+        <div class="hiking__wrapper">    
+            <div class="hiking__card">   
+                <div class="hiking__title">
+                    <i class="fas fa-hiking card-icon"></i>
+                    <h3>Easy Hikes</h3>
+                </div>
+                <div class="hiking__summary">
+                    <p>Short, quick and easy trails!</p>
+                    <p>Closeby the Portland area!</p>
+                </div>
+                <a href="/" class="button">Easy</a>
+            </div>
+
+            <div class="hiking__card">   
+                <div class="hiking__title">
+                    <i class="fas fa-hiking card-icon"></i>
+                    <h3>Moderate Hikes</h3>
+                </div>
+                <div class="hiking__summary">
+                    <p>Take your hike to the next level!</p>
+                    <p>Challenge yourself today!</p>
+                </div>
+                <a href="/" class="button">Moderate</a>
+            </div>
+
+            <div class="hiking__card">   
+                <div class="hiking__title">
+                    <i class="fas fa-hiking card-icon"></i>
+                    <h3>Hard Hikes</h3>
+                </div>
+                <div class="hiking__summary">
+                    <p>Test your limits!</p>
+                    <p>Rewarding on another level!</p>
+                </div>
+                <a href="/" class="button">Hard</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Gallery Adventures Section -->
     <script src="scripts/app.js"></script>
 </body>
 </html>

@@ -3,3 +3,4 @@
 
 # resources 
 - UI Gradients: https://uigradients.com/
+- Font Awesome Icons: https://fontawesome.com/
