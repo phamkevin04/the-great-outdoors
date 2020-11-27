@@ -93,7 +93,7 @@
 
 .summary__feature {
     margin-bottom: 24px;
-    font-size: clamp(16px, 5vs, 24px);
+    font-size: clamp(16px, 5vw, 24px);
 }
 
 /* font awesome icon changes */
