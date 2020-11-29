@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/coming-soon.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <a href="/" class="navbar__logo">
+            Adventure Awaits
+        </a>
+
+        <div class="navbar__toggle" id="mobile-menu"> <!--toggle for the mobile menu--> 
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div class="navbar__menu">
+            <a href="/" class="navbar__link">Home</a>
+            <a href="includes/coming-soon.html" class="navbar__link">Oregon</a>
+            <a href="includes/coming-soon.html" class="navbar__link">Gallery</a>
+            <a href="includes/coming-soon.html" class="navbar__link">Blog</a>
+            <a href="includes/coming-soon.html" class="navbar__link navbar__btn">Contact Me</a> 
+            <!-- need to do more implementation later -->
+        </div>
+    </nav>
+
+    <div class="bgimg">
+        <!-- <div class="topleft">
+            <p>Logo</p>
+        </div> -->
+        <div class="middle">
+            <h1>COMING SOON</h1>
+            <hr>
+            <p id="demo" style="font-size:30px"></p>
+        </div>
+        <!-- <div class="bottomleft">
+            <p>Some text</p>
+        </div> -->
+    </div>
+
+    
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text 
+    if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+</script>
+
+</body>
+</html>

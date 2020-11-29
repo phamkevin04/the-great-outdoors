@@ -15,7 +15,7 @@
 /* Hero Section for Home Page */
 .hero {
     background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1)),
-    url('/images/scenic-waterfall-fall.jpg'); /* smaller image size, quicker load time */
+    url('/images/scenic-waterfall.jpg'); /* smaller image size, quicker load time */
     height: 100vh;
     background-position: center;
     background-size: cover;
