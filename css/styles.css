@@ -98,18 +98,18 @@
 }
 
 /* font awesome icon changes */
-.fa-campground {
-    margin-right: 8px;
+.fa-hiking {
+    margin-right: 22px;
     color: var(--primary-color);
 }
 
 .fa-mountain {
-    margin-right: 8px;
+    margin-right: 10px;
     color: var(--primary-color);
 }
 
 .fa-water {
-    margin-right: 8px;
+    margin-right: 13px;
     color: var(--primary-color); 
 }
 
@@ -136,7 +136,7 @@
 
 .hiking__desc {
     margin-bottom: 48px;
-    font-size: clamp(16px, 3vw, 24px);
+    font-size: clamp(24px, 3vw, 32px);
     padding: 16px;
 }
 
