@@ -10,3 +10,4 @@
 - Font Awesome Icons: https://fontawesome.com/
 - Pexels: https://pexels.com/
 - Unsplashed: https://unsplash.com/
+- Green Sock: https://greensock.com/
