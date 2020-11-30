@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/coming-soon.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 
 <body>
@@ -30,10 +31,11 @@
 
         <div class="navbar__menu">
             <a href="/" class="navbar__link">Home</a>
-            <a href="/coming-soon.html" class="navbar__link">Oregon</a>
-            <a href="/coming-soon.html" class="navbar__link">Gallery</a>
-            <a href="/coming-soon.html" class="navbar__link">Blog</a>
-            <a href="/coming-soon.html" class="navbar__link navbar__btn">Contact Me</a> 
+            <a href="coming-soon.html" class="navbar__link">Oregon</a>
+            <a href="coming-soon.html" class="navbar__link">Gallery</a>
+            <a href="coming-soon.html" class="navbar__link">Blog</a>
+            <a href="https://forms.gle/MdHt4XWveDQzRnbE7" target="_blank" class="navbar__link">Feedback V1</a>
+            <a href="coming-soon.html" class="navbar__link navbar__btn">Contact Me</a> 
             <!-- need to do more implementation later -->
         </div>
     </nav>
@@ -52,36 +54,75 @@
         </div> -->
     </div>
 
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__desc">
+                <h1>Adventure Awaits</h1>
+                <p>Oregon's outdoors ready to explore</p>
+                <p id="phone">(503) - 000 - 0000</p>
+            </div>
+            <div class="footer__links">
+                <div class="footer__title">
+                    Adventure Awaits
+                </div>
+                <a href="#" class="footer__link">Oregon</a>
+                <a href="#" class="footer__link">Gallery</a>
+                <a href="#" class="footer__link">Blog</a>
+                <a href="#" class="footer__link">Contact Me</a>
+            </div>
+        </div>
+        <div class="footer__wrapper">
+            <div class="footer__links">
+                <div class="footer__title">
+                    Equipment Sites
+                </div>
+                <a href="https://www.rei.com/" target="_blank" class="footer__link">REI Co-op</a>
+                <a href="https://www.columbia.com/" target="_blank" class="footer__link">Columbia</a>
+                <a href="https://www.prana.com/" target="_blank" class="footer__link">PrAna</a>    
+                <a href="https://www.mountainhardwear.com/" target="_blank"class="footer__link">Mountain Hardware</a>
+            </div>
+            <div class="footer__links">
+                <div class="footer__title">
+                    Useful Resources
+                </div>
+                <a href="https://hikingguy.com/how-to-hike/hiking-for-beginners-11-essential-tips/" target="_blank" class="footer__link">Beginner's Guide</a>
+                <a href="https://hikingguy.com/best-hiking-gear/" target="_blank" class="footer__link">Best Hiking Gears</a>
+                <a href="https://blog.liftopia.com/10-essential-hiking-tips-beginner-hike/" target="_blank" class="footer__link">10 Essential Hiking Tips</a>
+                <a href="https://www.oregonhikers.org/field_guide/main_page" target="_blank" class="footer__link">Oregon Hikers</a>    
+            </div>
+        </div>
+    </div>
     
-<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
 
-    // Update the count down every 1 second
-    var countdownfunction = setInterval(function() {
+        // Update the count down every 1 second
+        var countdownfunction = setInterval(function() {
 
-    // Get todays date and time
-    var now = new Date().getTime();
+        // Get todays date and time
+        var now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-    // If the count down is over, write some text 
-    if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-    }, 1000);
-</script>
+        // If the count down is over, write some text 
+        if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>
 
 </body>
 </html>
