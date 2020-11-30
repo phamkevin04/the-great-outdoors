@@ -43,7 +43,7 @@
     .navbar__menu {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 100px);
+        grid-template-rows: repeat(6, 100px);
         position: absolute;
         width: 100%;
         top: -1000px; /* helps hides the old navbar menu items because there wasn't a display: none for the navbar__links */
