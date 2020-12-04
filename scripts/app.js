@@ -22,32 +22,48 @@ gsap.registerPlugin(ScrollTrigger) // allowed to use scroll trigger
 gsap.from('.animate-hero', { // animate to flow into the page hero section
     duration: 1.5,
     opacity: 0,
-    y: -150,
-    stagger: 0.3
+    y: -200,
+    stagger: 0.5
 });
 
-gsap.from('.animate-summary', {
+gsap.from('.animate-summary', { /* text on the left */
     scrollTrigger: '.animate-summary',
     duration: 1.5,
     opacity: 1,
-    x: -200, // coming in from the X coord side
-    stagger: 0.12
+    x: -200,
+    stagger: 0.5
 });
 
-gsap.from('.animate-img', {
+gsap.from('.animate-summary2', { /* text on the right */
+    scrollTrigger: '.animate-summary',
+    duration: 1.5,
+    opacity: 1,
+    x: 200,
+    stagger: 0.5
+});
+
+gsap.from('.animate-img', { /* image on the right */
     scrollTrigger: '.animate-summary',
     duration: 1.5,
     opacity: 0,
-    x: 200, // coming in from the X coord side
+    x: 200,
+    
+});
+
+gsap.from('.animate-img2', { /* image on the left */
+    scrollTrigger: '.animate-summary',
+    duration: 1.5,
+    opacity: 0,
+    x: -200,
     
 });
 
 gsap.from('.animate-hiking', {
     scrollTrigger: '.animate-hiking',
-    duration: 1,
+    duration: 1.5,
     opacity: 0,
-    y: -150,
-    stagger: 0.3,
+    y: -200,
+    stagger: 0.5,
     delay: 0.5
 });
 
@@ -55,25 +71,25 @@ gsap.from('.animate-card', {
     scrollTrigger: '.animate-card',
     duration: 1,
     opacity: 0,
-    y: -150, 
-    stagger: 0.1,
-    delay: 0.2
+    y: -200, 
+    stagger: 0.5,
+    delay: 0.5
 });
 
 gsap.from('.animate-gallery', {
     scrollTrigger: '.animate-gallery',
     duration: 1,
     opacity: 0,
-    y: -150,
-    stagger: 0.3,
+    y: -200,
+    stagger: 0.5,
     delay: 0.2
 });
 
 gsap.from('.animate-email', {
     scrollTrigger: '.animate-email',
-    duration: 0.8,
+    duration: 1.5,
     opacity: 0,
-    y: -150,
-    stagger: 0.25,
-    delay: 0.4
+    y: -200,
+    stagger: 0.5,
+    delay: 0.2
 });
