@@ -20,7 +20,7 @@ menu.addEventListener('click', mobileMenu);
 gsap.registerPlugin(ScrollTrigger) // allowed to use scroll trigger
 
 gsap.from('.animate-hero', { // animate to flow into the page hero section
-    duration: 0.5,
+    duration: 1.5,
     opacity: 0,
     y: -150,
     stagger: 0.3
@@ -28,9 +28,9 @@ gsap.from('.animate-hero', { // animate to flow into the page hero section
 
 gsap.from('.animate-summary', {
     scrollTrigger: '.animate-summary',
-    duration: 0.5,
+    duration: 1.5,
     opacity: 1,
-    x: -150, // coming in from the X coord side
+    x: -200, // coming in from the X coord side
     stagger: 0.12
 });
 
@@ -38,7 +38,7 @@ gsap.from('.animate-img', {
     scrollTrigger: '.animate-summary',
     duration: 1.5,
     opacity: 0,
-    x: -200, // coming in from the X coord side
+    x: 200, // coming in from the X coord side
     
 });
 
