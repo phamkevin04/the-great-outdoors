@@ -121,6 +121,21 @@
     color: var(--primary-color); 
 }
 
+.fa-camera {
+    margin-right: 13px;
+    color: var(--primary-color); 
+}
+
+.fa-ice-cream {
+    margin-right: 13px;
+    color: var(--primary-color); 
+}
+
+.fa-snowboard {
+    margin-right: 13px;
+    color: var(--primary-color); 
+}
+
 /* Responsive Mobile Styles */
 @media screen and (max-width: 768px) {
     .summary__container {
