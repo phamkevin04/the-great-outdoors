@@ -1,0 +1,11 @@
+.hero-blog {
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1)),
+    url('/images/waterfall-nature.jpg'); /* smaller image size, quicker load time */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 8px calc((100vw - 1200px) / 2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
