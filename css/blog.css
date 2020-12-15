@@ -9,3 +9,41 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+.blog__container {
+    margin-top: 25px;
+    display: flex;
+}
+
+.blog__image {
+    flex: 1;
+}
+
+.blog__image img {
+    width: 500px;
+}
+
+.blog__content {
+    flex: 3;
+    padding-left: 50px;
+    padding-right: 25px;
+}
+
+.blog__content h1 {
+    font-size: clamp(16px, 5vw, 32px);
+}
+
+.blog__content p {
+    font-size: clamp(12px, 5vw, 24px);
+}
+
+/* mobile view */
+@media (max-width: 768px) {
+    .blog__container {
+        display: block;
+    }
+
+    .blog__image img {
+        width: 400px;
+    }
+}
