@@ -10,3 +10,11 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+.summary__image img {
+    border-radius: 10px;
+}
+
+.summary__image2 img {
+    border-radius: 10px;
+}
